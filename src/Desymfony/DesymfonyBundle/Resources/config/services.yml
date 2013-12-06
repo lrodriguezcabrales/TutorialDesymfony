@@ -1,0 +1,7 @@
+parameters:
+#    desymfony.example.class: Desymfony\DesymfonyBundle\Example
+
+services:
+#    desymfony.example:
+#        class: %desymfony.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

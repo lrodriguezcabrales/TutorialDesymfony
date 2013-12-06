@@ -1,0 +1,11 @@
+desymfony_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: DesymfonyBundle:Default:index }
+
+admin_portada:
+    pattern:  /admin
+    defaults: { _controller: DesymfonyBundle:AdminPonencia:list }
+
+ponente:
+    pattern:  /ponentes
+    defaults: { _controller: DesymfonyBundle:Ponente:index }

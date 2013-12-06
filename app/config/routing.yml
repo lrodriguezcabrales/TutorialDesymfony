@@ -1,0 +1,33 @@
+
+
+desymfony:
+    resource: "@DesymfonyBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# contacto:
+#     pattern: /contacto
+#     defaults: { _controller: DesymfonyBundle:Default:contacto }
+
+#Ruta para varias paginas
+estatica:
+    pattern: /sitio/{nombre}
+    defaults: { _controller: DesymfonyBundle:Default:estatica }
+
+registro:
+    pattern: /registro
+    defaults: { _controller: DesymfonyBundle:Usuario:registro }
+
+login:
+    pattern: /login
+    defaults: { _controller: DesymfonyBundle:Usuario:login }
+
+check_path:
+    pattern: /check    
+
+logout:
+    pattern: /logout
+
+_amdin_ponencias:
+    resource: @DesymfonyBundle/Resources/config/admin_ponencia_routing.yml
+    prefix: /admin/ponencia
+

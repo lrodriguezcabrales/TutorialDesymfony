@@ -1,0 +1,9 @@
+{% extends 'DesymfonyBundle::layout.html.twig' %}
+{% block contenido %}
+<h1>Registro</h1>
+
+{{ form_rest(form)}}
+<form action="{{ path('registro') }}" method="post">
+<input type="submit" value="Regístrate" />
+</form>
+{% endblock %}
